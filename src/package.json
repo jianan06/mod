@@ -1,0 +1,53 @@
+[
+  {
+    "id": "blade_upright",
+    "type": "weapon",
+    "name": "upright",
+    "description": "a sword hovering on the ground",
+    "symbol": "|",
+    "looks_like": "sun_sword_on",
+    "bgcolor": [ "yellow" ],
+    "move_cost_mod": -1,
+    "light_emitted": 230,
+    "required_str": -2,
+    "flags": [ "NOITEM", "TRANSPARENT" ],
+    "deployed_item": "sun_sword",
+    "examine_action": "deployed_furniture"
+  },
+  {
+    "id": "candle_barrier",
+    "type": "furniture",
+    "name": "glowing candle",
+    "description": "A single glowing candle",
+    "symbol": ",",
+    "looks_like": "candle_lit",
+    "bgcolor": [ "black" ],
+    "move_cost_mod": -1,
+    "light_emitted": 20,
+    "required_str": -2,
+    "flags": [ "NOITEM", "USABLE_FIRE" ],
+    "deployed_item": "candle_barrier_aftermath",
+    "examine_action": "deployed_furniture"
+  },
+  {
+    "id": "candle_barrier_playermade",
+    "type": "furniture",
+    "name": "flickering candle",
+    "description": "A single candle, wick emanating a ghostly flame and projecting a glowing barrier.",
+    "symbol": ",",
+    "looks_like": "candle_lit",
+    "bgcolor": [ "blue" ],
+    "move_cost_mod": -1,
+    "light_emitted": 10,
+    "required_str": -2,
+    "flags": [ "NOITEM", "TRANSPARENT", "USABLE_FIRE" ],
+    "deployed_item": "candle",
+    "examine_action": "deployed_furniture",
+    "bash": {
+      "str_min": 40,
+      "str_max": 200,
+      "sound": "crash!",
+      "sound_fail": "whump.",
+      "items": [ { "item": "candle", "count": [ 0, 1 ] } ]
+    }
+  },
