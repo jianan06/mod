@@ -1,0 +1,38 @@
+@DisplayName("Test strict == true")
+@testfile
+
+public class Test {
+    void testJson throw JOSNException{
+JSONObject actual = new JSONObject();
+        actual.put("id", 1);
+        actual.put("type");
+        actual.put("name");
+        actual.put("description");
+        actual.put("symbol");
+        actual.put("look_like");
+        actual.put("bgcolor");
+        actual.put("move_cost_mod");
+        actual.put("light_emitted");
+        actual.put("required_str");
+        actual.put("flags");
+        actual.put("deployed_item");
+        actual.put("examine_action");
+    }
+    JSONAssert.assertEquals("{id:1}", actual, false);
+    JSONAssert.assertEquals("{type}", actual, false);
+    JSONAssert.assertEquals("{name}", actual, false);
+    JSONAssert.assertEquals("{description}", actual, false);
+    JSONAssert.assertEquals("{symbol}", actual, false);
+    JSONAssert.assertEquals("{look_like}", actual, false);
+    JSONAssert.assertEquals("{bgcolor}", actual, false);
+    JSONAssert.assertEquals("{move_cost_mod}", actual, false);
+    JSONAssert.assertEquals("{light_emitted}", actual, false);
+    JSONAssert.assertEquals("{required_str}", actual, false);
+    JSONAssert.assertEquals("{flags}", actual, false);
+    JSONAssert.assertEquals("{deployed_item}", actual, false);
+    JSONAssert.assertEquals("{examine_action}", actual, false);
+    
+    public void getTestJson() {
+        return testJson;
+    }
+}
