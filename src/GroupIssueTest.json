@@ -1,0 +1,42 @@
+@testfile
+
+public class Test {
+    void testJson throw JOSNException{
+JSONObject actual = new JSONObject();
+        actual.put("type");
+        actual.put("category");
+        actual.put("id");
+        actual.put("name");
+        actual.put("description");
+        actual.put("weight");
+        actual.put("to_hit");
+        actual.put("color");
+        actual.put("symbol");
+        actual.put("material");
+        actual.put("techniques");
+        actual.put("flags");
+        actual.put("volume");
+        actual.put("bashing");
+        actual.put("cutting");
+        actual.put("price");
+    }
+    
+    JSONAssert.assertEquals("{type}", actual, false);
+    JSONAssert.assertEquals("{category}", actual, false);
+    JSONAssert.assertEquals("{id}", actual, false);
+    JSONAssert.assertEquals("{name}", actual, false);
+    JSONAssert.assertEquals("{description}", actual, false);
+    JSONAssert.assertEquals("{weight}", actual, false);
+    JSONAssert.assertEquals("{to_hit}", actual, false);
+    JSONAssert.assertEquals("{symbo}", actual, false);
+    JSONAssert.assertEquals("{material}", actual, false);
+    JSONAssert.assertEquals("{techniques}", actual, false);
+    JSONAssert.assertEquals("{volume}", actual, false);
+    JSONAssert.assertEquals("{flags}", actual, false);
+    JSONAssert.assertEquals("{cutting}", actual, false);
+    JSONAssert.assertEquals("{price}", actual, false);
+    
+    public void getTestJson() {
+        return testJson;
+    }
+}
