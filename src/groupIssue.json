@@ -1,0 +1,18 @@
+{
+    "type": "TOOL",
+    "category": "weapons",
+    "id": "wooden bat",
+    "name": { "str": "wooden bat" },
+    "description": "A sturdy wood bat with nails sticking out the end.  Makes a brutal melee weapon.",
+    "weight": "1100 g",
+    "to_hit": 5,
+    "color": "yellow",
+    "symbol": "/",
+    "material": [ "wood" ],
+    "techniques": [ "WBLOCK_1", "BRUTAL" ],
+    "flags": [ "DURABLE_MELEE" ],
+    "volume": "1750 ml",
+    "bashing": 20,
+    "cutting": 3,
+    "price": 13000
+  },
